@@ -5,10 +5,10 @@ export interface IUserService {
  
     findOne(id: number): Promise<User>;
  
-    create();
+    create(User): Promise<User>;
  
-    edit();
+    edit(User): Promise<User>;
  
-    remove();
+    remove(id: number): Promise<boolean>;
  
  }
